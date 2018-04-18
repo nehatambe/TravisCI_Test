@@ -2,7 +2,9 @@ language: java
 jdk:
 - oraclejdk8
 install: true
+
 script: mvn clean install
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_cc79ece782da_key -iv $encrypted_cc79ece782da_iv
   -in test.txt.enc -out test.txt -d
